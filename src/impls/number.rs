@@ -56,11 +56,11 @@ impl<T> NumberAttributes<T> {
     }
 }
 impl NumberAttributes<f32> {
-    pub(crate) fn positive() -> Self {
+    pub fn positive() -> Self {
         NumberAttributes::min(0.0)
     }
 
-    pub(crate) fn normalized() -> Self {
+    pub fn normalized() -> Self {
         NumberAttributes::between(0.0, 1.0).speed(0.1)
     }
 }
