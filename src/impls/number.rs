@@ -51,7 +51,7 @@ impl<T> NumberAttributes<T> {
         }
     }
 
-    pub(crate) fn speed(self, speed: f32) -> Self {
+    pub fn speed(self, speed: f32) -> Self {
         NumberAttributes { speed, ..self }
     }
 }
